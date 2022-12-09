@@ -1,0 +1,50 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-border {
+    border-bottom: 2px solid aliceblue;
+}
+.style-form {
+    width: 35%;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.style-fieldset{
+text-align: left;
+font-weight: bold;
+}
+.style-label {
+    align-self: baseline;
+    margin-top: 10px;
+    padding-right: 110px;
+}
+.style-input {
+    height: 25px;
+    width: 220px;
+    margin-bottom: 10px;
+}
+.cursor{
+    cursor: pointer;
+}
+.save-button {
+    width: 90px;
+    height: 25px;
+    margin: 20px;
+}
+.style-select {
+    background-color: field;
+    height: 30px;
+    width: 230px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.style-footer {
+    border-top: 2px solid aliceblue;
+    margin:20px;
+    padding-top:20px;
+}
