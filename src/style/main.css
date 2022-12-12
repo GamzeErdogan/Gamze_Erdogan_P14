@@ -12,9 +12,9 @@
     background-color: aliceblue;
     border-radius: 5px;
 }
-.style-fieldset{
-text-align: left;
-font-weight: bold;
+.style-fieldset {
+    text-align: left;
+    font-weight: bold;
 }
 .style-label {
     align-self: baseline;
@@ -26,7 +26,7 @@ font-weight: bold;
     width: 220px;
     margin-bottom: 10px;
 }
-.cursor{
+.cursor {
     cursor: pointer;
 }
 .save-button {
@@ -43,8 +43,11 @@ font-weight: bold;
     text-overflow: ellipsis;
     cursor: pointer;
 }
+.style-department {
+    margin-bottom: 20px;
+}
 .style-footer {
     border-top: 2px solid aliceblue;
-    margin:20px;
-    padding-top:20px;
+    margin: 20px;
+    padding-top: 20px;
 }

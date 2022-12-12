@@ -11,16 +11,21 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Header />
-              {/* <CreateEmployee /> */}
                 <Routes>
-                    <Route path="/"  element={<CreateEmployee />}/>
-                    <Route path="/createEmployee"  element={<CreateEmployee />}/>
-                    <Route path="/employeesList" element={<CurrentEmployees />} />
+                    <Route path="/" element={<CreateEmployee />} />
+                    <Route
+                        path="/createEmployee"
+                        element={<CreateEmployee />}
+                    />
+                    <Route
+                        path="/employeesList"
+                        element={<CurrentEmployees />}
+                    />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
                 <Footer />
             </div>
-         </BrowserRouter>
+        </BrowserRouter>
     );
 }
 
