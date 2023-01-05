@@ -4,13 +4,36 @@
     align-items: center;
     flex-direction: column;
 }
+
+.flexHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header-border {
-    border-bottom: 2px solid aliceblue;
+    border-bottom: 2px solid black;
+}
+.search {
+    margin-bottom: 30px;
+}
+.linkHome {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.headerColor {
+    color: olive;
+}
+.WQNxq {
+    width: 80% !important;
+    margin: auto !important;
+    margin-bottom: 50px !important;
 }
 .style-form {
     width: 35%;
-    background-color: aliceblue;
+    background-color: #93ad18;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .style-fieldset {
     text-align: left;
@@ -25,14 +48,22 @@
     height: 25px;
     width: 220px;
     margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.linkStyle {
+    color: black;
 }
 .cursor {
     cursor: pointer;
 }
 .save-button {
-    width: 90px;
-    height: 25px;
+    width: 120px;
+    height: 40px;
     margin: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 .style-select {
     background-color: field;
@@ -47,7 +78,11 @@
     margin-bottom: 20px;
 }
 .style-footer {
-    border-top: 2px solid aliceblue;
+    border-top: 2px solid black;
     margin: 20px;
     padding-top: 20px;
+}
+.logoHeader {
+    width: 100px;
+    height: auto;
 }

@@ -1,18 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { employeeList } from "../../data/employeeList";
 
 const initialState = {
-    employeeList : [],
+    employeeList : employeeList,
 }
 
 export const employeeSlice = createSlice({
     name : 'addList',
     initialState,
-    actions : {
-        //listenin guncellenmesini istiyorum
-        uploadEmployeeList : () => {},
+    reducers : {
+        //actions here........
+        addEmployee : (state,action) => {
+            state.employeeList.unshift(action.payload)
+        },
     }
 });
 
-export const {uploadEmployeeList} = employeeSlice.actions;
+export const {addEmployee} = employeeSlice.actions;
 
 export default employeeSlice.reducer;
