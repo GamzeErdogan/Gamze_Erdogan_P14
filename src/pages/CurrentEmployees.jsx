@@ -51,6 +51,10 @@ const columns = [
         sortable: true,
     },
 ];
+
+/*
+This component display all the employees
+*/
 const CurrentEmployees = () => {
     const [filterText, setFilterText] = useState("");
 
@@ -59,13 +63,12 @@ const CurrentEmployees = () => {
     const filteredItems = data?.employeeList?.filter((employeeItem) =>
         isMatch(employeeItem, filterText)
     );
-    console.log({ filteredItems });
 
     return (
         <div className="flex">
             <h2>Current Employees</h2>
             <div className="search">
-                <label>Search: </label>
+                <label htmlFor="search">Search: </label>
                 <input
                     value={filterText}
                     name="search"
@@ -86,7 +89,7 @@ const CurrentEmployees = () => {
         </div>
     );
 };
-
+//The function handle the search 
 function isMatch(employeeItem, filterText) {
     for (const itemValue of Object.values(employeeItem)) {
         if (itemValue.toLowerCase().includes(filterText.trim().toLowerCase())) {

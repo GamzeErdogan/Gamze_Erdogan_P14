@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { employeeList } from "../../data/employeeList";
 
 const initialState = {
-    employeeList : employeeList,
+    employeeList : employeeList
 }
 
 export const employeeSlice = createSlice({

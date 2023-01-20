@@ -1,14 +1,13 @@
 import React from "react";
 import '../style/main.css';
-import logo from '../assets/logo.png'
 
 
-const Header = () => {
+const Header = ({logo}) => {
     return (
         <div className="flexHeader header-border">
-            <img className='logoHeader' src={logo} alt='logo of the company' />
+            <img className='logoHeader' fetchpriority="low" src={logo} alt='logo of the company' />
             <h1 className="headerColor">RHnet</h1>
-            <img className='logoHeader' src={logo} alt='logo of the company' />
+            <img className='logoHeader' fetchpriority="low" src={logo} alt='logo of the company' />
         </div>
     );
 };
